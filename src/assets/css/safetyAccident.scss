@@ -1,0 +1,38 @@
+.safe_management_container {
+  position: relative;
+  height: 100vh;
+  .countLineWrapper {
+    width: 100vw;
+    height: 50vh;
+    overflow-x: scroll;
+    position: absolute;
+    bottom: 0;
+    &::-webkit-scrollbar {
+      display: none
+    }
+  }
+  #monthSelect {
+    position: absolute;
+    bottom: 1vw;
+    z-index: 999;
+    display: flex;
+    width: 200vw;
+    li {
+      width: 12.6vw;
+      height: 12.6vw;
+      margin: 1vw 2vw;
+      line-height: 13vw;
+      text-align: center;
+      font-size: 3vw;
+      color: #fff;
+      position: relative;
+    }
+  }
+  .activeMonth {
+    border: 2px solid #10cfaa;
+    border-radius: 50%;
+    color: #10cfaa !important;
+    line-height: 12vw !important;
+    box-sizing: border-box
+  }
+}

@@ -1,0 +1,105 @@
+.monitor_container {
+  height: 100vh;
+  .mint-navbar {
+    background: #232d39;
+    overflow-x: scroll;
+    padding-bottom: 3px;
+    width: 100vw;
+    position: absolute;
+    bottom: 86vh;
+    &::-webkit-scrollbar {
+      display: none
+    }
+    .mint-tab-item {
+      width: 20vw;
+      display: block;
+      flex: none;
+      color: #516179;
+      .mint-tab-item-label {
+        font-size: 3.4vw
+      }
+    }
+    .mint-tab-item.is-selected {
+      color: #10d5b3;
+      border-bottom: 3px solid #10d5b3;
+    }
+  }
+  .title_center {
+    justify-content: center;
+  }
+  .mint-tab-container {
+    margin-top: 4px;
+    position: relative;
+    height: 86vh;
+    position: absolute;
+    bottom: 0;
+    .mint-tab-container-wrap {
+      height: 86vh;
+      .monitor_wrapper {
+        height: 44vh;
+        background: #283441;
+        border-bottom: 1px solid #333e4b;
+        .mint-cell {
+          background: transparent;
+          .mint-cell-wrapper {
+            border-top: 1px solid #333e4b
+          }
+          .mint-cell-title {
+            flex: none;
+            .mint-cell-text {
+              color: #fff
+            }
+          }
+        }
+      }
+      .lineWrapper {
+        width: 100vw;
+        overflow-x: scroll;
+        position: absolute;
+        bottom: 0;
+        &::-webkit-scrollbar {
+          display: none
+        }
+        .monthSelect {
+          position: absolute;
+          bottom: 1vw;
+          z-index: 999;
+          display: flex;
+          width: 100vw;
+          li {
+            width: 12.6vw;
+            height: 10.6vw;
+            margin: 1vw 2vw;
+            line-height: 11vw;
+            text-align: center;
+            font-size: 3vw;
+            color: #fff;
+            position: relative;
+            span {
+              position: absolute;
+              top: -10vw;
+              left: -.8vh;
+              font-size: 3.6vw;
+              font-weight: bold;
+              background: -webkit-linear-gradient(top, #f2d365, #ff6b3e);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+          .activeMonth {
+            border: 2px solid #10cfaa;
+            border-radius: 50%;
+            color: #10cfaa;
+            line-height: 10vw;
+            box-sizing: border-box
+          }
+        }
+      }
+      .cellTitle {
+        line-height: 48px;
+        color: #fff;
+        padding-left: 10px
+      }
+    }
+  }
+}

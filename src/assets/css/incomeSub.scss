@@ -1,0 +1,111 @@
+.incomeSub_container {
+  height: 100vh;
+  .incomeSub_wrapper {
+    width: 100vw;
+    background: #283441;
+    border-top: 1px solid #333e4b;
+    border-bottom: 1px solid #333e4b;
+    .tab {
+      margin: 2vw 0;
+      overflow: hidden;
+      li {
+        float: left;
+        width: 50vw;
+        box-sizing: border-box;
+        text-align: center;
+        color: #516179;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.35);
+        &:nth-child(1) {
+          border-right: 1px solid #516179
+        }
+        .count {
+          color: #FFF
+        }
+        .activeColor {
+          color: #10d5b3
+        }
+        div {
+          margin-bottom: .5vw;
+        }
+      }
+    }
+    .mint-search {
+      height: 8vh;
+      .mint-searchbar {
+        background: transparent;
+        .mint-searchbar-inner {
+          background: transparent;
+          border: 1px solid #10d5b3;
+          border-radius: 2vw;
+          i {
+            font-size: 4vw;
+            margin-right: 2vw;
+          }
+        }
+        .mint-searchbar-core {
+          background: transparent;
+          color: #fff;
+          font-size: 3.6vw
+        }
+      }
+    }
+  }
+  .list>li {
+    margin: 0 3vw;
+    overflow: hidden;
+    h4 {
+      width: 88vw;
+      float: left;
+      line-height: 10vw;
+      color: #6f86a0;
+      border-bottom: 1px solid #3b4652;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .arrow {
+      width: 18px;
+      height: 18px;
+      float: right;
+      background: url("../images/rightArrow.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 40% 80%;
+      margin-top: 2.8vw;
+    }
+    .rotate {
+      transform: rotate(90deg);
+    }
+    .detail {
+      float: left;
+      margin-left: 3vw;
+      li {
+        padding: 1vw 0;
+        width: 85vw;
+        overflow: hidden;
+        border-bottom: 1px solid #3b4652;
+        span {
+          color: #6f86a0;
+          margin-left: 2vw
+        }
+        .name {
+          float: left;
+        }
+        .value {
+          float: right;
+          color: #10d5b3
+        }
+        &:nth-child(1) .name {
+          padding-left: 7vw;
+          background: url("../images/type.png") no-repeat;
+          background-size: 40% 100%
+        }
+        &:nth-child(2) .name {
+          padding-left: 7vw;
+          background: url("../images/money.png") no-repeat;
+          background-size: 40% 100%
+        }
+      }
+    }
+  }
+}

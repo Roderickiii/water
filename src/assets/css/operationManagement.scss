@@ -1,0 +1,124 @@
+.operation_container {
+  height: 100vh;
+  .mint-navbar {
+    background: #232d39;
+    overflow-x: scroll;
+    padding-bottom: 3px;
+    width: 100vw;
+    position: absolute;
+    bottom: 86vh;
+    &::-webkit-scrollbar {
+      display: none
+    }
+    .mint-tab-item {
+      width: 20vw;
+      display: block;
+      flex: none;
+      color: #516179;
+      .mint-tab-item-label {
+        font-size: 3.4vw
+      }
+    }
+    .mint-tab-item.is-selected {
+      color: #10d5b3;
+      border-bottom: 3px solid #10d5b3;
+    }
+  }
+  .title_center {
+    justify-content: center;
+  }
+  .mint-tab-container {
+    margin-top: 4px;
+    position: relative;
+    height: 86vh;
+    position: absolute;
+    bottom: 0;
+    .mint-tab-container-wrap {
+      height: 86vh;
+      .operation_wrapper {
+        width: 100vw;
+        height: 44vh;
+        background: #283441;
+        border-bottom: 1px solid #333e4b;
+        position: relative;
+        .legend {
+          position: absolute;
+          right: 3vw;
+          top: 3vw;
+          font-size: 3vw;
+          border: 1px solid #10d5b3;
+          padding: 1.5vw;
+          border-radius: 1.5vw;
+          a {
+            color: #10d5b3;
+          }
+        }
+        .mint-cell {
+          background: transparent;
+          .mint-cell-wrapper {
+            border-top: 1px solid #333e4b
+          }
+          .mint-cell-title {
+            flex: none;
+            .mint-cell-text {
+              color: #fff
+            }
+          }
+        }
+      }
+      #costList {
+        overflow: hidden;
+        li {
+          width: 20vw;
+          height: 20.9vh;
+          text-align: center;
+          float: left;
+          padding: 6vh 1vh;
+          border: 1px solid #2e404c;
+          box-sizing: border-box
+        }
+        .value {
+          color: #10caf9;
+          margin-bottom: 1vh
+        }
+        .name {
+          color: #fff;
+          font-size: 14px
+        }
+      }
+      .lineWrapper {
+        width: 100vw;
+        overflow-x: scroll;
+        position: absolute;
+        bottom: 0;
+        &::-webkit-scrollbar {
+          display: none
+        }
+        .monthSelect {
+          position: absolute;
+          bottom: 1vw;
+          z-index: 999;
+          display: flex;
+          width: 200vw;
+          li {
+            width: 12.6vw;
+            height: 12.6vw;
+            margin: 1vw 2vw;
+            line-height: 13vw;
+            text-align: center;
+            font-size: 3vw;
+            color: #fff;
+            position: relative;
+          }
+          .activeMonth {
+            border: 2px solid #10cfaa;
+            border-radius: 50%;
+            color: #10cfaa;
+            line-height: 12vw;
+            box-sizing: border-box
+          }
+        }
+      }
+    }
+  }
+}

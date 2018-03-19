@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "PingFang SC bold","Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: #606266
+}
+
+html{
+  background:#232d39;
+}
+
+.mint-header{
+  background:none !important
+}
+
+.mint-header-title{
+  font-size:5vw;
+  line-height: 5.2vw
+}
+
+#app{
+  background: #232D39;
+  height: 100vh
+}
+
+#vueg-background{
+  background: #232D39
+}
