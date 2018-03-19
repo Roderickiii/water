@@ -1,4 +1,4 @@
-# huayanwatermobile
+# waterMobile
 
 > A Vue.js project
 
