@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <mt-header title="华衍水务大数据平台"></mt-header>
+    <mt-header title="水务大数据平台"></mt-header>
     <mt-swipe :auto="4000">
       <mt-swipe-item><img src="../assets/images/banner.png"></mt-swipe-item>
     </mt-swipe>
