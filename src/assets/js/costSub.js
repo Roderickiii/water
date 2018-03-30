@@ -18,12 +18,12 @@ export default {
             switch (type) {
                 case 'purchase':
                     this.costSubStatus = true;
-                    this.target = "采购"
+                    this.target = "采购";
                     this.drawCostSubBar(this.purchaseData);
                     break;
                 case 'wages':
                     this.costSubStatus = false;
-                    this.target = "工资"
+                    this.target = "工资";
                     this.drawCostSubBar(this.wagesData);
                     break;
             }
