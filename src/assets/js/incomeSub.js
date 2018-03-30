@@ -266,16 +266,15 @@ export default {
       !saleWater.error ? saleWater.start() : "";
       let project = new CountUp('project', 0, this.project, 0, delay, options);
       !project.error ? project.start() : "";
+    },
+    init() {
+      this.getsaleWaterData()
+      this.incomeSubBar = echarts.init(document.getElementById("incomeSubBar"));
+      this.drawIncomeSubBar(this.saleWaterData);
+      this.getListData()
     }
   },
-  init() {
-    this.getsaleWaterData()
-    this.incomeSubBar = echarts.init(document.getElementById("incomeSubBar"));
-    this.drawIncomeSubBar(this.saleWaterData);
-    this.getListData()
+  mounted() {
+    this.init()
   }
-},
-mounted() {
-  this.init()
-}
 }

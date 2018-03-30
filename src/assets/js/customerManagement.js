@@ -842,19 +842,19 @@ export default {
         report: 12
       }, {
         month: "二月",
-        newClothes: 3206,
-        repair: 16,
-        complaint: 102,
-        report: 8
+        newClothes: 3406,
+        repair: 46,
+        complaint: 302,
+        report: 18
       }, {
         month: "三月",
-        newClothes: 3214,
+        newClothes: 3223,
         repair: 34,
         complaint: 201,
         report: 10
       }, {
         month: "四月",
-        newClothes: 3460,
+        newClothes: 3060,
         repair: 26,
         complaint: 132,
         report: 20
